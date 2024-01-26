@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <ReleaseVersion></ReleaseVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ImageBinarizer" Version="1.5.6" />

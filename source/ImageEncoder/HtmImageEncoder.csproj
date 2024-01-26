@@ -14,6 +14,7 @@
     <RepositoryUrl>https://github.com/ddobric/neocortexapi/tree/ImageBinarizerEncoder</RepositoryUrl>
     <AssemblyVersion>1.0.1</AssemblyVersion>
     <FileVersion>1.0.1</FileVersion>
+    <ReleaseVersion></ReleaseVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\license.txt">

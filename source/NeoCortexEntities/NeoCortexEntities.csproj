@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName></AssemblyName>
     <RootNamespace>NeoCortexApi</RootNamespace>
+    <ReleaseVersion></ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>
