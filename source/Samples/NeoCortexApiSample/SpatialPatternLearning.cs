@@ -57,7 +57,7 @@ namespace NeoCortexApiSample
             // This dictionary defines a set of typical encoder parameters.
             Dictionary<string, object> settings = new Dictionary<string, object>()
             {
-                { "W", 15},
+                { "W", 15}, //chng
                 { "N", inputBits},
                 { "Radius", -1.0},
                 { "MinVal", 0.0},
@@ -74,11 +74,15 @@ namespace NeoCortexApiSample
             // We create here 100 random input values.
             List<double> inputValues = new List<double>();
 
-            for (int i = 0; i < (int)max; i++)
+            //for (int i = 0; i < (int)max; i++)
+            //{
+            //    inputValues.Add((double)i);
+            //}
+
+            for (int i = 0; i < 100; i++)
             {
                 inputValues.Add((double)i);
             }
-
             var sp = RunExperiment(cfg, encoder, inputValues);
 
             //RunRustructuringExperiment(sp, encoder, inputValues);
