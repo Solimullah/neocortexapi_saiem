@@ -642,5 +642,11 @@ On comparison between two SDRs, the overlap.png shows more overlaps/intersection
 The full example can be found [here](https://github.com/TanzeemHasan/neocortexapi/blob/8de0bf4d823b94393381b63984c8c1c5a47e330d/source/UnitTestsProject/SdrRepresentation/SpatialPoolerColumnActivityTest.cs#L19).
 
 
+##Conclusion
+
+In conclusion, [This]() function of drawbitmap can be used for any input values which can then scale and used to generate the bitmap for each and every types of data. Visualizing SDRs as bitmap images can interprete the complex patterns encoded in HTM systems. This approach not only aids in the analysis of HTM models but also paves the way for analyzing different types of data pattern from the input. Overall, this project can generate new sparse distribution and all together a process to run the experiment with bitmap generation of SDRs whether it would be 1D or 2D. 
+
+  
+
 
    
