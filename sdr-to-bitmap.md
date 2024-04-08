@@ -2,8 +2,6 @@
 
 This document outlines the method for visualizing Sparse Distributed Representations (SDRs) as bitmap images using the `DrawBitmap` method. Visualizing SDRs can significantly aid in understanding the patterns and information encoded within them, especially when dealing with complex encoders or spatial pooling processes. This method provides a tangible way to assess and interpret the activity and structure of SDRs, facilitating a deeper understanding of their functionality in various applications.
 
-## Abstract 
-Sparse Distributed Representations (SDRs) are fundamental to the architecture of Hierarchical Temporal Memory (HTM) systems, mimicking the sparse and distributed nature of neural activity observed in the brain. An individual pixel in the SDR of digital representation of an image or graphic is called a bitmap. This paper presents a method for visualizing Sparse Distributed Representations (SDRs) as bitmap images, leveraging the DrawBitmap utility within Hierarchical Temporal Memory (HTM) systems. SDRs, akin to the brain's data processing technique, offer a robust and efficient way to handle diverse information types. By converting SDRs into bitmap images, this can visually interpret the encoded patterns and assess the functionality of encoders and spatial pooling processes in HTM models. This paper explains the working procedure of DrawBitmap methods and an understanding of SpatialPooler and Encoder’s capabilities in visual representation and data encoding.
 ## Introduction
 
 ### What is SDR:
