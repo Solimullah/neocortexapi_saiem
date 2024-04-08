@@ -487,7 +487,7 @@ NeoCortexUtils.DrawBitmap(twoDimArray, 1024, 1024, Path.Combine(folderName, file
 ```
 
 Bitmap Visualization Outcomes
-The DrawBitmap method is instrumental in converting SDRs into insightful bitmap images, with active bits represented in Dark Orange and inactive bits in Yellow. The method parameters set the bitmap's height and width to 1024 pixels, ensuring a detailed and clear visual output. Each bitmap image is saved with a corresponding index value in the top left corner, facilitating easy identification.
+The DrawBitmap method is instrumental in converting SDRs into insightful bitmap images, with active bits and inactive bits. The method parameters set the bitmap's height and width to 1024 pixels, ensuring a detailed and clear visual output. Each bitmap image is saved with a corresponding index value in the top left corner, facilitating easy identification.
 
 The generated bitmap are as follows:
 
@@ -653,6 +653,8 @@ The full example can be found [here](https://github.com/TanzeemHasan/neocortexap
 
 ## Conclusion
 
-In conclusion, [This]() function of drawbitmap can be used for any input values which can then scale and used to generate the bitmap for each and every types of data. Visualizing SDRs as bitmap images can interprete the complex patterns encoded in HTM systems. This approach not only aids in the analysis of HTM models but also paves the way for analyzing different types of data pattern from the input. Overall, this project can generate new sparse distribution and all together a process to run the experiment with bitmap generation of SDRs whether it would be 1D or 2D. 
+In conclusion, [This]() function of drawbitmap can be used for any input values which can then scale and used to generate the bitmap for each and every types of data. Visualizing SDRs as bitmap images can interprete the complex patterns encoded in HTM systems.
+In spatial pooler, it encoded the input bits and then when these values can pass through the spatial pooler that will active the mini colums. From there the program can find the active and inactive mini columns which then can also be represent using the that similar function. 
+This approach not only aids in the analysis of HTM models but also paves the way for analyzing different types of data pattern from the input. Overall, this project can generate new sparse distribution and all together a process to run the experiment with bitmap generation of SDRs whether it would be 1D or 2D. 
 
    
