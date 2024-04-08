@@ -221,11 +221,11 @@ public static void Draw1DBitmap(int[] array, string filePath, int scale = 10)
 This Draw1DBitmap method creates a 1D bitmap image representing a binary array. Each element in the array corresponds to a bit in the bitmap image. Active bits (with a value of 1) are represented as black rectangles, while inactive bits (with a value of 0) are represented as white rectangles. The dimensions of the bitmap are determined by the length of the input array and a specified scale factor. The resulting bitmap image is saved to the specified file path in PNG.
 
 ## Result
-This project showcasing how different data types, including numbers, geographical coordinates, and temporal information, can be visually represented.
+This project showcasing how different data types, including numbers, geographical coordinates, and temporal information, can be visually represented. In this experiment we can input any significant individual data to convert it into the bitmap. Some examples with experiment details provided here in this section.
 
 ### Basic SDR Examples with binary encoders
 
-At first, visualizing a basic SDR with a pattern of activation. This simple example will help understand the visualization process. So for this by taking a simple value say ```40148```. Now it needs SDR to encode this data in order to visualize.
+Binary encoder encodes the data and the via the encoder it converts the data into SDR which will then shown in the bitmap using drawbitmap method. At first, visualizing a basic SDR with a pattern of activation. This simple example will help understand the visualization process. So for this by taking a simple value say ```40148```. Now it needs SDR to encode this data in order to visualize.
 ```csharp
             // This snippet creates a dictionary, encoderSettings, to hold the configuration parameters for the encoder. The dictionary contains key-value pairs where each key is a setting name,and the associated value               // is the setting's value. In this case, the only parameter specified is "N", set to 156. The parameter "N" represents the size of the output encoded vector, 
             var encoderSettings = new Dictionary<string, object>
@@ -263,7 +263,7 @@ After that the below image is generated from the DrawBitMap method
 <img src="https://github.com/TanzeemHasan/neocortexapi/assets/74203937/9bfc6c35-925a-41cc-95db-50f494a8cedd" width="400" height="400" />
 
 
-For another example, taken a random integer value ```50149```. This value will encode by setting up the sdr encoder settings and encode the value with that settings and also set up the two dimensional array
+Similarly, for another example, taken a random integer value ```50149```. This value will encode by setting up the sdr encoder settings and encode the value with that settings and also set up the two dimensional array
 ```csharp
             // This snippet creates a dictionary, encoderSettings, to hold the configuration parameters for the encoder. The dictionary contains key-value pairs where each key is a setting name,and the associated value               // is the setting's value. In this case, the only parameter specified is "N", set to 156. The parameter "N" represents the size of the output encoded vector, 
             var encoderSettings = new Dictionary<string, object>
@@ -328,7 +328,7 @@ As next method which can generate Images from the 1D sdrs from the binary encode
 NeoCortexUtils.Draw1DBitmap(result, filePath, 200);
 ```
 
-Here is the Modified Draw1DBitmap
+Here is the implemented Draw1DBitmap
 ```csharp
         /// <summary>
         /// Draws a 1D bitmap from an array of values.
