@@ -106,7 +106,7 @@ public static void DrawBitmap(int[,] twoDimArray, int scale, String filePath, Co
 
             myBitmap.Save(filePath, ImageFormat.Png);
         }
-```csharp
+```
 
 This function takes a two-dimensional array twoDimArray representing a binary image, along with parameters for scale, file path, inactive cell color, active cell color, and an optional text label. First, it determines the dimensions of the array w and h. Then, it creates a new bitmap image with dimensions w * scale by h * scale. It iterates over each element in the array, and for each active cell (value of 1), it sets the corresponding pixel in the bitmap to the active cell color, while for inactive cells (value of 0), it sets the pixel to the inactive cell color. This process is repeated at scale times to scale up the image. Additionally, if a text label is provided, it draws the text onto the bitmap. Finally, the bitmap is saved to the specified file path as a PNG image. The function effectively converts a binary array into a bitmap image with customizable colors and text. This function is mainly for generating the SDRs for active columns. This same function can be used for encoder also with transposing the two dimensional array that this function takes as an input.
 
@@ -129,7 +129,7 @@ public static void DrawBitmap(int[,] twoDimArray, int width, int height, String 
             DrawBitmap(twoDimArray, scale, filePath, inactiveCellColor, activeCellColor, text);
 
         }
-```csharp
+```
 This function also takes input as a two dimensional array and additionally it takes height and width which is validated by two dimensional array’s row length and column length. Here, ‘w’ is the row's length and ‘h’ is the column’s length. If the condition met then it throws an argument exception else the previous method of draw bitmap function is used.
 
 Another function was written which takes a list of two dimensional arrays as shown follow.
@@ -188,11 +188,12 @@ Another function was written which takes a list of two dimensional arrays as sho
 
             myBitmap.Save(filePath, ImageFormat.Png);
         }
- ```csharp
+ ```
 
 At first, this function takes a list of two dimensional arrays then iterates through each two dimensional array. After this, the two dimensional array also validated like the previous method of draw bitmap function. Here the different thing is, it is calculating the scale value based on the specified bitmap width and the number of arrays (two dimensional arrays) count. At the end, it generates the bitmaps and saves the image.
 
 As of now, there are no bitmap functions of an one dimensional array. That’s why, created a function for representing the SDRs for a one dimensional array
+
 ```csharp
 public static void Draw1DBitmap(int[] array, string filePath, int scale = 10)
  {
@@ -217,7 +218,7 @@ public static void Draw1DBitmap(int[] array, string filePath, int scale = 10)
          bitmap.Save(filePath, ImageFormat.Png);
      }
  }
-```csharp
+```
 
 This Draw1DBitmap method creates a 1D bitmap image representing a binary array. Each element in the array corresponds to a bit in the bitmap image. Active bits (with a value of 1) are represented as black rectangles, while inactive bits (with a value of 0) are represented as white rectangles. The dimensions of the bitmap are determined by the length of the input array and a specified scale factor. The resulting bitmap image is saved to the specified file path in PNG.
 
