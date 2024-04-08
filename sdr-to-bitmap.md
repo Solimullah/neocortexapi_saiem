@@ -415,7 +415,8 @@ Here are some other example generated bitmap of different datetimes
 
 |    Datetime   | 05/01/2024 21:58:07                                                                         | 06/02/2024 21:58:07                                                                         | 07/01/2024 21:58:07                                                                         | 01/02/2024 21:58:07                                                                         |
 |-------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|    results   | <img src="images/1.png" height="200" width="200"/>                                   | <img src="images/2.png" alt="" height="200" width="200"/>                                   | <img src="images/3.png" alt="" height="200" width="200"/>                                   | <img src="images/4.png" alt="" height="200" width="200"/>                                   |
+|    results   | 
+<img src="images/1.png" height="200" width="200"/>                                   | <img src="images/2.png" alt="" height="200" width="200"/>                                   | <img src="images/3.png" alt="" height="200" width="200"/>                                   | <img src="images/4.png" alt="" height="200" width="200"/>                                   |
 
 
 The full example can be found [here](https://github.com/TanzeemHasan/neocortexapi/blob/44772a45ac31c48e74a648ca9b1386fb82520590/source/UnitTestsProject/EncoderTests/DateTimeEncoderTests.cs#L78). 
